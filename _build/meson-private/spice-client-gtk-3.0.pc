@@ -1,0 +1,14 @@
+prefix=/home/pi/spice/usr
+libdir=${prefix}/lib/arm-linux-gnueabihf
+includedir=${prefix}/include
+
+exec_prefix=${prefix}
+
+Name: spice-client-gtk-3.0
+Description: SPICE Client Gtk 3.0 library
+Version: 0.38
+Requires: spice-client-glib-2.0 gtk+-3.0 >=  3.22
+Requires.private: spice-client-glib-2.0, spice-protocol >=  0.12.12, glib-2.0 >=  2.38, gio-2.0 >=  2.38, gthread-2.0 >=  2.38, pixman-1 >=  0.17.7, openssl >=  1.0.0, opus >=  0.9.14, libcacard >=  2.5.1, gobject-2.0 >=  2.46, cairo, libjpeg, zlib, json-glib-1.0, gio-unix-2.0, libpulse-mainloop-glib, gstreamer-1.0 >=  1.10, gstreamer-base-1.0 >=  1.10, gstreamer-app-1.0 >=  1.10, gstreamer-audio-1.0 >=  1.10, gstreamer-video-1.0 >=  1.10, liblz4, libsasl2, gtk+-3.0 >=  3.22, epoxy, x11
+Libs: -L${libdir} -lspice-client-gtk-3.0
+Libs.private: -lm
+Cflags: -I${includedir}/spice-client-gtk-3.0

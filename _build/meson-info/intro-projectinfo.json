@@ -1,0 +1,1 @@
+{"version": "0.38", "descriptive_name": "spice-gtk", "subproject_dir": "subprojects", "subprojects": [{"name": "spice-common", "version": "undefined", "descriptive_name": "spice-common"}, {"name": "keycodemapdb", "version": "undefined", "descriptive_name": "keycodemapdb"}]}

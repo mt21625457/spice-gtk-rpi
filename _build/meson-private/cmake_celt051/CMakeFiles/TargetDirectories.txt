@@ -1,0 +1,2 @@
+/home/pi/spice/src/spice-gtk-0.38/_build/meson-private/cmake_celt051/CMakeFiles/rebuild_cache.dir
+/home/pi/spice/src/spice-gtk-0.38/_build/meson-private/cmake_celt051/CMakeFiles/edit_cache.dir

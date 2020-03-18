@@ -1,0 +1,287 @@
+.\" ****************************************************************************
+.\"  RECORDER.3                                                recorder library
+.\" ****************************************************************************
+.\"
+.\"   File Description:
+.\"
+.\"     Man page for the recorder library
+.\"
+.\"     This documents RECORDER, RECORDER_DEFINE and RECORDER_DECLARE
+.\"
+.\"
+.\"
+.\"
+.\"
+.\"
+.\" ****************************************************************************
+.\"  (C) 2019 Christophe de Dinechin <christophe@dinechin.org>
+.\" %%%LICENSE_START(LGPLv2+_DOC_FULL)
+.\" This is free documentation; you can redistribute it and/or
+.\" modify it under the terms of the GNU Lesser General Public License as
+.\" published by the Free Software Foundation; either version 2 of
+.\" the License, or (at your option) any later version.
+.\"
+.\" The GNU Lesser General Public License's references to "object code"
+.\" and "executables" are to be interpreted as the output of any
+.\" document formatting or typesetting system, including
+.\" intermediate and printed output.
+.\"
+.\" This manual is distributed in the hope that it will be useful,
+.\" but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\" GNU Lesser General Public License for more details.
+.\"
+.\" You should have received a copy of the GNU General Public
+.\" License along with this manual; if not, see
+.\" <http://www.gnu.org/licenses/>.
+.\" %%%LICENSE_END
+.\" ****************************************************************************
+
+.TH RECORDER 3  "2019-03-09" "1.0" "Recorder Library"
+
+.\" ----------------------------------------------------------------------------
+.SH NAME
+.\" ----------------------------------------------------------------------------
+RECORDER, RECORDER_DEFINE, RECORDER_DECLARE \- Declare and define buffers to record events
+
+
+.\" ----------------------------------------------------------------------------
+.SH SYNOPSIS
+.\" ----------------------------------------------------------------------------
+.nf
+.B #include <recorder/recorder.h>
+.PP
+.BI "#define RECORDER(" recname ", " recsize ", " rechelp ") ..."
+.BI "#define RECORDER_DEFINE(" recname ", " recsize ", " rechelp ") ..."
+.BI "#define RECORDER_DECLARE(" recname ") ..."
+.fi
+.PP
+
+
+.\" ----------------------------------------------------------------------------
+.SH DESCRIPTION
+.\" ----------------------------------------------------------------------------
+.PP
+The
+.BR RECORDER()
+macro defines a buffer named
+.I recname
+to store up to
+.I recsize
+events for use by the
+.BR record (3)
+function. The
+.I rechelp
+string is self-documentation describing the events stored in the buffer.
+This self-documentation can be displayed by activating the
+.BR help
+trace, see
+.BR recorder_set_trace (3).
+
+.PP
+The
+.BR RECORDER_DECLARE()
+macro declares an event recorder, and can be used in header files.
+
+.PP
+The
+.BR RECORDER_DEFINE()
+macro is an alias for
+.BR RECORDER(),
+the intention being that you would use
+.BR RECORDER()
+for event recorders that are local to a file, or a
+.BR RECORDER_DECLARE()
+(in the header file) paired with
+.BR RECORDER_DEFINE()
+(in a non-header file) for event recorders that are shared across
+multiple translation units.
+
+.PP
+These macros should be used at file scope, i.e. where a function
+definition or global variable is allowed.
+
+.PP
+Each recorder is associated with a
+.I trace value
+which is an integer value that can be read using
+.BR RECORDER_TRACE (3).
+See
+.BR recorder_trace_set (3).
+
+
+.\" ----------------------------------------------------------------------------
+.SH EXAMPLES
+.\" ----------------------------------------------------------------------------
+.PP
+The program below records its input arguments, and crashes if passed
+.I crash
+as the first command-line argument.
+.PP
+.in +4n
+.EX
+#include <recorder/recorder.h>
+#include <string.h>
+
+RECORDER(program_args, 32, "Program command-line arguments");
+int main(int argc, char **argv)
+{
+    int a;
+    recorder_dump_on_common_signals(0, 0);
+    for (a = 0; a < argc; a++)
+        record(program_args, "Argument %d is %+s", a, argv[a]);
+
+    if (argc >= 2 && strcmp(argv[1], "crash") == 0)
+    {
+        char *ptr = NULL;
+        strcpy(ptr, argv[1]);
+    }
+}
+.EE
+.in -4n
+.PP
+When a crash occurs, previously recorded events are printed out on the
+console.
+
+.PP
+The program below is an instrumented version of the classical
+recursive Fibonacci computation. It uses several recorders
+corresponding to different types of events, and activates warnings and
+errors in a way that can be configured by setting an environment variable.
+.PP
+.in +4n
+.EX
+#include <recorder/recorder.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+RECORDER(fib_main,    32, "Loops in fib function");
+RECORDER(fib_loops,   32, "Loops in fib function");
+RECORDER(fib_warning, 32, "Warnings in fib function");
+RECORDER(fib_error,   32, "Errors in fib function");
+
+int fib(int n)
+{
+    if (n <= 1) {
+        if (n < 0)
+            record(fib_error, "fib is undefined for negative value %d", n);
+        return n;
+    }
+    record(fib_loops, "Computing fib(%d)", n);
+    int result = fib(n-1) + fib(n-2);
+    record(fib_loops, "Computed fib(%d) = %d", n, result);
+    return result;
+}
+
+int main(int argc, char **argv)
+{
+    int a;
+    recorder_dump_on_common_signals(0, 0);
+    recorder_trace_set(".*_warning=35 .*_error");
+    recorder_trace_set(getenv("FIB_TRACES"));
+    for (a = 1; a < argc; a++) {
+        int n = atoi(argv[a]);
+        if (n >= RECORDER_TRACE(fib_warning))
+            record(fib_warning, "Computing for %d may take a while", n);
+        printf("fib(%d) = %d\n", n, fib(n));
+        if (n >= RECORDER_TRACE(fib_warning))
+            record(fib_warning, "Computation for %d finally completed", n);
+    }
+}
+.EE
+.in -4n
+.PP
+This program will produce an output similar to the following:
+.PP
+.in +4n
+.EX
+% fib 1 2 3 4 10 20 30 35 10 40 -1
+fib(1) = 1
+fib(2) = 1
+fib(3) = 2
+fib(4) = 3
+fib(10) = 55
+fib(20) = 6765
+fib(30) = 832040
+[2714667 0.177725] fib_warning: Computing for 35 may take a while
+fib(35) = 9227465
+[32575370 1.859156] fib_warning: Computation for 35 finally completed
+fib(10) = 55
+[32575547 1.859171] fib_warning: Computing for 40 may take a while
+fib(40) = 102334155
+[363735828 20.527882] fib_warning: Computation for 40 finally completed
+[363735829 20.527887] fib_error: fib is undefined for negative value -1
+fib(-1) = -1
+.EE
+.in -4n
+The first column in trace outputs is the number of events that were
+recorded. THe second column is the time in seconds since the program
+started.
+
+.PP
+The same program can also be run with additional tracing or warnings,
+for example:
+.PP
+.in +4n
+.EX
+% FIB_TRACES="recorder_location fib_loops fib_warning=3" /tmp/fib 3 4
+/tmp/fib.c:33:[82 0.000496] fib_warning: Computing for 3 may take a while
+/tmp/fib.c:18:[83 0.000561] fib_loops: Computing fib(3)
+/tmp/fib.c:18:[84 0.000570] fib_loops: Computing fib(2)
+/tmp/fib.c:20:[85 0.000575] fib_loops: Computed fib(2) = 1
+/tmp/fib.c:20:[86 0.000581] fib_loops: Computed fib(3) = 2
+fib(3) = 2
+/tmp/fib.c:36:[87 0.000590] fib_warning: Computation for 3 finally completed
+/tmp/fib.c:33:[88 0.000596] fib_warning: Computing for 4 may take a while
+/tmp/fib.c:18:[89 0.000601] fib_loops: Computing fib(4)
+/tmp/fib.c:18:[90 0.000607] fib_loops: Computing fib(3)
+/tmp/fib.c:18:[91 0.000612] fib_loops: Computing fib(2)
+/tmp/fib.c:20:[92 0.000619] fib_loops: Computed fib(2) = 1
+/tmp/fib.c:20:[93 0.000625] fib_loops: Computed fib(3) = 2
+/tmp/fib.c:18:[94 0.000664] fib_loops: Computing fib(2)
+/tmp/fib.c:20:[95 0.000707] fib_loops: Computed fib(2) = 1
+/tmp/fib.c:20:[96 0.000724] fib_loops: Computed fib(4) = 3
+fib(4) = 3
+/tmp/fib.c:36:[97 0.000741] fib_warning: Computation for 4 finally completed
+.EE
+.in -4n
+
+
+.\" ----------------------------------------------------------------------------
+.SH BUGS
+.\" ----------------------------------------------------------------------------
+.PP
+Incorrect use of the macros generally results in nonsensical compiler diagnostics.
+
+.PP
+Bugs should be reported using https://github.com/c3d/recorder/issues.
+
+
+.\" ----------------------------------------------------------------------------
+.SH SEE ALSO
+.\" ----------------------------------------------------------------------------
+.BR record (3),
+.BR record_fast (3)
+.br
+.BR recorder_trace_set (3)
+.BR RECORDER_TRACE (3)
+.br
+.BR recorder_dump (3),
+.BR recorder_dump_for (3),
+.br
+.BR recorder_configure_output (3),
+.BR recorder_configure_show (3)
+.br
+.BR recorder_configure_format (3),
+.BR recorder_configure_type (3)
+
+.PP
+Additional documentation and tutorials can be found
+at https://github.com/c3d/recorder.
+
+
+.\" ----------------------------------------------------------------------------
+.SH AUTHOR
+.\" ----------------------------------------------------------------------------
+Written by Christophe de Dinechin

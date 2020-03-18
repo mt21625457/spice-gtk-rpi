@@ -1,0 +1,28 @@
+ 0x0000000e (SONAME)                     Library soname: [libspice-client-gtk-3.0.so.5]
+spice_display_get_grab_keys T 000000c4
+spice_display_get_pixbuf T 0000032c
+spice_display_get_type T 00000060
+spice_display_key_event_get_type T 00000074
+spice_display_mouse_ungrab T 0000007c
+spice_display_new T 00000048
+spice_display_new_with_monitor T 00000060
+spice_display_send_keys T 000001e0
+spice_display_set_grab_keys T 0000010c
+spice_grab_sequence_as_string T 000000ac
+spice_grab_sequence_copy T 00000044
+spice_grab_sequence_free T 0000001c
+spice_grab_sequence_get_type T 00000094
+spice_grab_sequence_new T 00000040
+spice_grab_sequence_new_from_string T 00000108
+spice_g_signal_connect_object T 00000208
+SPICEGTK_1 A
+spice_gtk_session_copy_to_guest T 00000104
+spice_gtk_session_get T 0000012c
+spice_gtk_session_get_type T 00000060
+spice_gtk_session_paste_from_guest T 00000180
+spice_usb_device_widget_get_type T 00000060
+spice_usb_device_widget_new T 00000074
+spice_util_get_debug T 0000004c
+spice_util_get_version_string T 00000010
+spice_util_set_debug T 00000030
+spice_uuid_to_string T 00000098

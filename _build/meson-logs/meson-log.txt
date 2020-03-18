@@ -1,0 +1,1656 @@
+Build started at 2020-03-17T21:03:52.801680
+Main binary: /usr/bin/python3
+Build Options: -Dprefix=/home/pi/spice/usr
+Python system: Linux
+The Meson build system
+Version: 0.52.0
+Source dir: /home/pi/spice/src/spice-gtk-0.38
+Build dir: /home/pi/spice/src/spice-gtk-0.38/_build
+Build type: native build
+Running command: /home/pi/spice/src/spice-gtk-0.38/build-aux/git-version-gen /home/pi/spice/src/spice-gtk-0.38/.tarball-version
+--- stdout ---
+0.38
+--- stderr ---
+
+
+Project name: spice-gtk
+Project version: 0.38
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/sanitycheckc.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 8.3.0 "cc (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C linker for the build machine: GNU ld.bfd 2.31.1
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/sanitycheckc.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 8.3.0 "cc (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C linker for the host machine: GNU ld.bfd 2.31.1
+Build machine cpu family: arm
+Build machine cpu: armv7l
+Host machine cpu family: arm
+Host machine cpu: armv7l
+Target machine cpu family: arm
+Target machine cpu: armv7l
+Program build-aux/meson-dist found: YES (/home/pi/spice/src/spice-gtk-0.38/build-aux/meson-dist)
+
+Executing subproject spice-common method meson 
+
+Project name: spice-common
+Project version: undefined
+C compiler for the build machine: cc (gcc 8.3.0 "cc (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C linker for the build machine: GNU ld.bfd 2.31.1
+C compiler for the host machine: cc (gcc 8.3.0 "cc (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C linker for the host machine: GNU ld.bfd 2.31.1
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp_w3k2mig
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp_w3k2mig/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("alloca.h")
+          #error "Header 'alloca.h' could not be found"
+         #endif
+        #else
+         #include <alloca.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "alloca.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpeabvj1cm
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpeabvj1cm/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("arpa/inet.h")
+          #error "Header 'arpa/inet.h' could not be found"
+         #endif
+        #else
+         #include <arpa/inet.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "arpa/inet.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp15mxrq9q
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp15mxrq9q/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("dlfcn.h")
+          #error "Header 'dlfcn.h' could not be found"
+         #endif
+        #else
+         #include <dlfcn.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "dlfcn.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp5ph9tw93
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp5ph9tw93/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("inttypes.h")
+          #error "Header 'inttypes.h' could not be found"
+         #endif
+        #else
+         #include <inttypes.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "inttypes.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp5zu1s2fx
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp5zu1s2fx/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/in.h")
+          #error "Header 'netinet/in.h' could not be found"
+         #endif
+        #else
+         #include <netinet/in.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/in.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp3a1fp9sc
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp3a1fp9sc/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdlib.h")
+          #error "Header 'stdlib.h' could not be found"
+         #endif
+        #else
+         #include <stdlib.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "stdlib.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpv9q8jqmx
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpv9q8jqmx/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/socket.h")
+          #error "Header 'sys/socket.h' could not be found"
+         #endif
+        #else
+         #include <sys/socket.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/socket.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpyz2vpp5e
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpyz2vpp5e/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/stat.h")
+          #error "Header 'sys/stat.h' could not be found"
+         #endif
+        #else
+         #include <sys/stat.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/stat.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp0yi3orid
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp0yi3orid/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/types.h")
+          #error "Header 'sys/types.h' could not be found"
+         #endif
+        #else
+         #include <sys/types.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/types.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmppet2xuw1
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmppet2xuw1/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("unistd.h")
+          #error "Header 'unistd.h' could not be found"
+         #endif
+        #else
+         #include <unistd.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "unistd.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmptw1ptol1
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmptw1ptol1/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("regex.h")
+          #error "Header 'regex.h' could not be found"
+         #endif
+        #else
+         #include <regex.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "regex.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpsedbrwpi
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpsedbrwpi/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/mman.h")
+          #error "Header 'sys/mman.h' could not be found"
+         #endif
+        #else
+         #include <sys/mman.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/mman.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpaijc9c_1
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpaijc9c_1/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpaijc9c_1/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define alloca meson_disable_define_of_alloca
+        
+        #include <limits.h>
+        #undef alloca
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char alloca ();
+        
+        #if defined __stub_alloca || defined __stub___alloca
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return alloca ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpaijc9c_1/testfile.c:10:14: warning: conflicting types for built-in function 'alloca' [-Wbuiltin-declaration-mismatch]
+         char alloca ();
+              ^~~~~~
+/usr/bin/ld: /tmp/cc41SYdb.o: in function `main':
+testfile.c:(.text+0x8): undefined reference to `alloca'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp_s8pf0g6
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp_s8pf0g6/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp_s8pf0g6/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_alloca)
+                #error "__builtin_alloca not found"
+            #endif
+        #elif ! defined(alloca)
+            /* Check for __builtin_alloca only if no includes were added to the
+             * prefix above, which means no definition of alloca can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_alloca;
+            #else
+                #error "No definition for __builtin_alloca found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "alloca" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpiqf0jbye
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpiqf0jbye/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpiqf0jbye/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define sigaction meson_disable_define_of_sigaction
+        
+        #include <limits.h>
+        #undef sigaction
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char sigaction ();
+        
+        #if defined __stub_sigaction || defined __stub___sigaction
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return sigaction ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "sigaction" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpw3a0mbkv
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpw3a0mbkv/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpw3a0mbkv/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define drand48 meson_disable_define_of_drand48
+        
+        #include <limits.h>
+        #undef drand48
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char drand48 ();
+        
+        #if defined __stub_drand48 || defined __stub___drand48
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return drand48 ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "drand48" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp5og8ppia
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp5og8ppia/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp5og8ppia/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define setlinebuf meson_disable_define_of_setlinebuf
+        
+        #include <limits.h>
+        #undef setlinebuf
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char setlinebuf ();
+        
+        #if defined __stub_setlinebuf || defined __stub___setlinebuf
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return setlinebuf ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "setlinebuf" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpzgg1r0du
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpzgg1r0du/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpzgg1r0du/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default pkg-config fallback at pkg-config
+Trying pkg-config binary pkg-config for machine MachineChoice.HOST at ['/usr/bin/pkg-config']
+Found pkg-config: /usr/bin/pkg-config (0.29)
+Determining dependency 'spice-protocol' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion spice-protocol` -> 0
+0.14.1
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags spice-protocol` -> 0
+-I/home/pi/spice/usr/include/spice-1
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config spice-protocol --libs` -> 0
+
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config spice-protocol --libs` -> 0
+
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config spice-protocol --libs --static` -> 0
+
+Run-time dependency spice-protocol found: YES 0.14.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'glib-2.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion glib-2.0` -> 0
+2.58.3
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags glib-2.0` -> 0
+-I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
+-lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config glib-2.0 --libs --static` -> 0
+-lglib-2.0 -pthread -lpcre -pthread
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpz_3zwhgp
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpz_3zwhgp/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpz_3zwhgp/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main() {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+4
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpi7zyj44r
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpi7zyj44r/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpi7zyj44r/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/arm-linux-gnueabihf/8/
+programs: =/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/
+libraries: =/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/8/:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/8/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+
+Compiler stderr:
+ 
+Run-time dependency glib-2.0 found: YES 2.58.3
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gio-2.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gio-2.0` -> 0
+2.58.3
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags gio-2.0` -> 0
+-pthread -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gio-2.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lgio-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gio-2.0 --libs` -> 0
+-lgio-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gio-2.0 --libs --static` -> 0
+-lgio-2.0 -ldl -pthread -lresolv -lgmodule-2.0 -pthread -ldl -lz -lmount -lblkid -luuid -lselinux -lsepol -lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency gio-2.0 found: YES 2.58.3
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gthread-2.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gthread-2.0` -> 0
+2.58.3
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags gthread-2.0` -> 0
+-pthread -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gthread-2.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lgthread-2.0 -pthread -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gthread-2.0 --libs` -> 0
+-lgthread-2.0 -pthread -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gthread-2.0 --libs --static` -> 0
+-lgthread-2.0 -pthread -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency gthread-2.0 found: YES 2.58.3
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'pixman-1' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion pixman-1` -> 0
+0.36.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags pixman-1` -> 0
+-I/usr/include/pixman-1
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config pixman-1 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lpixman-1
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config pixman-1 --libs` -> 0
+-lpixman-1
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config pixman-1 --libs --static` -> 0
+-lpixman-1
+Run-time dependency pixman-1 found: YES 0.36.0
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'openssl' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion openssl` -> 0
+1.1.1d
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags openssl` -> 0
+-I/home/pi/spice/usr/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config openssl --libs` -> 0
+-L/home/pi/spice/usr/lib -lssl -lcrypto
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config openssl --libs` -> 0
+-L/home/pi/spice/usr/lib -lssl -lcrypto
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config openssl --libs --static` -> 0
+-L/home/pi/spice/usr/lib -lssl -lcrypto -ldl -pthread
+Run-time dependency openssl found: YES 1.1.1d
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'celt051' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion celt051` -> 1
+
+CMake binary for MachineChoice.HOST is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Trying CMake binary cmake for machine MachineChoice.HOST at ['/usr/bin/cmake']
+Found CMake: /usr/bin/cmake (3.13.4)
+Extracting basic cmake information
+Try CMake generator: auto
+Called `/usr/bin/cmake --trace-expand .` in /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/cmake_celt051 -> 0
+  -- Module search paths:    ['/', '/opt', '/usr', '/usr/local']
+  -- CMake root:             /usr/share/cmake-3.13
+  -- CMake architectures:    ['arm-linux-gnueabihf']
+  -- CMake lib search paths: ['lib', 'lib32', 'lib64', 'libx32', 'share', 'lib/arm-linux-gnueabihf']
+Run-time dependency celt051 found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'opus' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion opus` -> 0
+1.3
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags opus` -> 0
+-I/usr/include/opus
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config opus --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lopus
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config opus --libs` -> 0
+-lopus
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config opus --libs --static` -> 0
+-lopus -lm
+Run-time dependency opus found: YES 1.3
+Program python3 found: YES (/usr/bin/python3)
+Message: Checking for python module six
+Running command: /usr/bin/python3 -m six
+--- stdout ---
+
+--- stderr ---
+
+
+Message: Checking for python module pyparsing
+Running command: /usr/bin/python3 -m pyparsing
+--- stdout ---
+# '*' as column list and dotted table name
+select * from SYS.XYZZY
+['select', '*', 'from', ['SYS.XYZZY']]
+- columns: ['*']
+- command: 'select'
+- tables: ['SYS.XYZZY']
+# caseless match on "SELECT", and casts back to "select"
+SELECT * from XYZZY, ABC
+['select', '*', 'from', ['XYZZY', 'ABC']]
+- columns: ['*']
+- command: 'select'
+- tables: ['XYZZY', 'ABC']
+# list of column names, and mixed case SELECT keyword
+Select AA,BB,CC from Sys.dual
+['select', ['AA', 'BB', 'CC'], 'from', ['SYS.DUAL']]
+- columns: [['AA', 'BB', 'CC']]
+  [0]:
+    ['AA', 'BB', 'CC']
+- command: 'select'
+- tables: ['SYS.DUAL']
+# multiple tables
+Select A, B, C from Sys.dual, Table2
+['select', ['A', 'B', 'C'], 'from', ['SYS.DUAL', 'TABLE2']]
+- columns: [['A', 'B', 'C']]
+  [0]:
+    ['A', 'B', 'C']
+- command: 'select'
+- tables: ['SYS.DUAL', 'TABLE2']
+# invalid SELECT keyword - should fail
+Xelect A, B, C from Sys.dual
+^
+FAIL: Expected 'select', found 'X'  (at char 0), (line:1, col:1)
+# incomplete command - should fail
+Select
+      ^
+FAIL: Expected {"*" | columns}, found end of text  (at char 6), (line:1, col:7)
+# invalid column name - should fail
+Select ^^^ frox Sys.dual
+       ^
+FAIL: Expected {"*" | columns}, found '^'  (at char 7), (line:1, col:8)
+
+100
+[100]
+
+-100
+[-100]
+
++100
+[100]
+
+3.14159
+[3.14159]
+
+6.02e23
+[6.02e+23]
+
+1e-12
+[1e-12]
+
+100
+[100.0]
+
+-100
+[-100.0]
+
++100
+[100.0]
+
+3.14159
+[3.14159]
+
+6.02e23
+[6.02e+23]
+
+1e-12
+[1e-12]
+
+100
+[256]
+
+FF
+[255]
+
+12345678-1234-5678-1234-567812345678
+[UUID('12345678-1234-5678-1234-567812345678')]
+
+--- stderr ---
+
+
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libcacard' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion libcacard` -> 0
+2.6.1
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags libcacard` -> 0
+-I/usr/include/cacard -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libcacard --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lcacard -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libcacard --libs` -> 0
+-lcacard -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libcacard --libs --static` -> 0
+-lcacard -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency libcacard found: YES 2.6.1
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpti1h474f
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpti1h474f/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpti1h474f/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -DG_LOG_DOMAIN="Spice" 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -DG_LOG_DOMAIN="Spice": YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpi9fnx_h0
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpi9fnx_h0/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpi9fnx_h0/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror: YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpgtxa43rd
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpgtxa43rd/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpgtxa43rd/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-unused-parameter -Wunused-parameter 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpa3gw0okw
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpa3gw0okw/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpa3gw0okw/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_38 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_38: YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpdjzq1ing
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpdjzq1ing/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpdjzq1ing/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -DGLIB_VERSION_MAX_ALLOWED=GLIB_VERSION_2_38 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -DGLIB_VERSION_MAX_ALLOWED=GLIB_VERSION_2_38: YES 
+Adding test "test_logging"
+Adding test "test_region"
+Adding test "test_ssl_verify"
+Adding test "test_utils"
+Adding test "test_marshallers"
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gdk-pixbuf-2.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gdk-pixbuf-2.0` -> 0
+2.38.1
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags gdk-pixbuf-2.0` -> 0
+-pthread -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gdk-pixbuf-2.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gdk-pixbuf-2.0 --libs` -> 0
+-lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gdk-pixbuf-2.0 --libs --static` -> 0
+-lgdk_pixbuf-2.0 -lm -lgio-2.0 -ldl -pthread -lresolv -lgmodule-2.0 -pthread -ldl -lz -lmount -lblkid -luuid -lselinux -lsepol -lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.38.1
+Adding test "test_quic"
+Program asciidoc found: NO
+Configuring config.h using configuration
+Build targets in project: 14
+Subproject spice-common finished.
+
+
+Executing subproject keycodemapdb method meson 
+
+Project name: keycodemapdb
+Project version: undefined
+Build targets in project: 14
+Subproject keycodemapdb finished.
+
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp0qb72hz_
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp0qb72hz_/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("termios.h")
+          #error "Header 'termios.h' could not be found"
+         #endif
+        #else
+         #include <termios.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "termios.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpx9xo_hzr
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpx9xo_hzr/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("X11/XKBlib.h")
+          #error "Header 'X11/XKBlib.h' could not be found"
+         #endif
+        #else
+         #include <X11/XKBlib.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "X11/XKBlib.h" : YES 
+Using cached compile:
+Cached command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpv9q8jqmx/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/socket.h")
+          #error "Header 'sys/socket.h' could not be found"
+         #endif
+        #else
+         #include <sys/socket.h>
+        #endif
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Has header "sys/socket.h" : YES (cached)
+Using cached compile:
+Cached command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp0yi3orid/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/types.h")
+          #error "Header 'sys/types.h' could not be found"
+         #endif
+        #else
+         #include <sys/types.h>
+        #endif
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Has header "sys/types.h" : YES (cached)
+Using cached compile:
+Cached command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp5zu1s2fx/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/in.h")
+          #error "Header 'netinet/in.h' could not be found"
+         #endif
+        #else
+         #include <netinet/in.h>
+        #endif
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Has header "netinet/in.h" : YES (cached)
+Using cached compile:
+Cached command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpeabvj1cm/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("arpa/inet.h")
+          #error "Header 'arpa/inet.h' could not be found"
+         #endif
+        #else
+         #include <arpa/inet.h>
+        #endif
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Has header "arpa/inet.h" : YES (cached)
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmphf_50i51
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmphf_50i51/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("epoxy/egl.h")
+          #error "Header 'epoxy/egl.h' could not be found"
+         #endif
+        #else
+         #include <epoxy/egl.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "epoxy/egl.h" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpuw5jub3z
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpuw5jub3z/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpuw5jub3z/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define clearenv meson_disable_define_of_clearenv
+        
+        #include <limits.h>
+        #undef clearenv
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char clearenv ();
+        
+        #if defined __stub_clearenv || defined __stub___clearenv
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return clearenv ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clearenv" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpgtsp1lyj
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpgtsp1lyj/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpgtsp1lyj/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define strtok_r meson_disable_define_of_strtok_r
+        
+        #include <limits.h>
+        #undef strtok_r
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strtok_r ();
+        
+        #if defined __stub_strtok_r || defined __stub___strtok_r
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return strtok_r ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "strtok_r" : YES 
+Dependency spice-protocol found: YES (cached)
+Dependency glib-2.0 found: YES (cached)
+Dependency gio-2.0 found: YES (cached)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gobject-2.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gobject-2.0` -> 0
+2.58.3
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags gobject-2.0` -> 0
+-I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gobject-2.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gobject-2.0 --libs` -> 0
+-lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gobject-2.0 --libs --static` -> 0
+-lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency gobject-2.0 found: YES 2.58.3
+Dependency pixman-1 found: YES (cached)
+Dependency openssl found: YES (cached)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'cairo' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion cairo` -> 0
+1.16.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags cairo` -> 0
+-I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config cairo --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lcairo
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config cairo --libs` -> 0
+-lcairo
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config cairo --libs --static` -> 0
+-lcairo -lz -lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread -lpixman-1 -lfontconfig -luuid -lexpat -lfreetype -lpng16 -lm -lz -lm -lz -lxcb-shm -lxcb-render -lXrender -lXext -lX11 -lpthread -lxcb -lXau -lXdmcp
+Run-time dependency cairo found: YES 1.16.0
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libjpeg' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion libjpeg` -> 0
+1.5.2
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags libjpeg` -> 0
+
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libjpeg --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -ljpeg
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libjpeg --libs` -> 0
+-ljpeg
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libjpeg --libs --static` -> 0
+-ljpeg
+Run-time dependency libjpeg found: YES 1.5.2
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'zlib' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion zlib` -> 0
+1.2.11
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags zlib` -> 0
+
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config zlib --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lz
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config zlib --libs` -> 0
+-lz
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config zlib --libs --static` -> 0
+-lz
+Run-time dependency zlib found: YES 1.2.11
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'json-glib-1.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion json-glib-1.0` -> 0
+1.4.4
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags json-glib-1.0` -> 0
+-pthread -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include -I/home/pi/spice/usr/include/json-glib-1.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config json-glib-1.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -L/home/pi/spice/usr/lib/arm-linux-gnueabihf -ljson-glib-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config json-glib-1.0 --libs` -> 0
+-L/home/pi/spice/usr/lib/arm-linux-gnueabihf -ljson-glib-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config json-glib-1.0 --libs --static` -> 0
+-L/home/pi/spice/usr/lib/arm-linux-gnueabihf -ljson-glib-1.0 -lgio-2.0 -ldl -pthread -lresolv -lgmodule-2.0 -pthread -ldl -lz -lmount -lblkid -luuid -lselinux -lsepol -lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency json-glib-1.0 found: YES 1.4.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gio-unix-2.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gio-unix-2.0` -> 0
+2.58.3
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags gio-unix-2.0` -> 0
+-pthread -I/usr/include/gio-unix-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gio-unix-2.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lgio-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gio-unix-2.0 --libs` -> 0
+-lgio-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gio-unix-2.0 --libs --static` -> 0
+-lgio-2.0 -ldl -pthread -lresolv -lgmodule-2.0 -pthread -ldl -lz -lmount -lblkid -luuid -lselinux -lsepol -lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency gio-unix-2.0 found: YES 2.58.3
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'celt051' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency celt051 found: NO (tried pkgconfig and cmake)
+Dependency opus found: YES (cached)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gtk+-3.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gtk+-3.0` -> 0
+3.24.5
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags gtk+-3.0` -> 0
+-pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/arm-linux-gnueabihf/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gtk+-3.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gtk+-3.0 --libs` -> 0
+-lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gtk+-3.0 --libs --static` -> 0
+-lgtk-3 -latk-bridge-2.0 -latspi -ldbus-1 -lpthread -lsystemd -lgdk-3 -lXinerama -lXi -lXrandr -lXcursor -lXcomposite -lXdamage -lXfixes -lxkbcommon -lwayland-cursor -lwayland-egl -lwayland-client -lepoxy -ldl -lGL -lEGL -lpangocairo-1.0 -lpangoft2-1.0 -lharfbuzz -lm -lgraphite2 -lpango-1.0 -lm -lfribidi -latk-1.0 -lcairo-gobject -lcairo -lz -lpixman-1 -lfontconfig -lexpat -lfreetype -lpng16 -lm -lz -lm -lxcb-shm -lxcb-render -lXrender -lXext -lX11 -lpthread -lxcb -lXau -lXdmcp -lgdk_pixbuf-2.0 -lm -lgio-2.0 -ldl -pthread -lresolv -lgmodule-2.0 -pthread -ldl -lz -lmount -lblkid -luuid -lselinux -lsepol -lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency gtk+-3.0 found: YES 3.24.5
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'epoxy' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion epoxy` -> 0
+1.5.3
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags epoxy` -> 0
+
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config epoxy --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lepoxy
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config epoxy --libs` -> 0
+-lepoxy
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config epoxy --libs --static` -> 0
+-lepoxy -ldl -lGL -lEGL
+Run-time dependency epoxy found: YES 1.5.3
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'x11' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion x11` -> 0
+1.6.7
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags x11` -> 0
+
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config x11 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lX11
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config x11 --libs` -> 0
+-lX11
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config x11 --libs --static` -> 0
+-lX11 -lpthread -lxcb -lXau -lXdmcp
+Run-time dependency x11 found: YES 1.6.7
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libva-x11' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion libva-x11` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency libva-x11 found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libphodav-2.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion libphodav-2.0` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency libphodav-2.0 found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libpulse-mainloop-glib' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion libpulse-mainloop-glib` -> 0
+12.2
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags libpulse-mainloop-glib` -> 0
+-D_REENTRANT -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libpulse-mainloop-glib --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lpulse-mainloop-glib -lpulse -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libpulse-mainloop-glib --libs` -> 0
+-lpulse-mainloop-glib -lpulse -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libpulse-mainloop-glib --libs --static` -> 0
+-L/usr/lib/arm-linux-gnueabihf/pulseaudio -lpulse-mainloop-glib -lpulsecommon-12.2 -lpulse -lpulsecommon-12.2 -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency libpulse-mainloop-glib found: YES 12.2
+meson.build:172: WARNING: PulseAudio backend is deprecated and will be removed in a future release
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gstreamer-1.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gstreamer-1.0` -> 0
+1.14.4
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags gstreamer-1.0` -> 0
+-pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-1.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-1.0 --libs` -> 0
+-lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-1.0 --libs --static` -> 0
+-lgstreamer-1.0 -lgmodule-2.0 -pthread -ldl -lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency gstreamer-1.0 found: YES 1.14.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gstreamer-base-1.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gstreamer-base-1.0` -> 0
+1.14.4
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags gstreamer-base-1.0` -> 0
+-pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-base-1.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-base-1.0 --libs` -> 0
+-lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-base-1.0 --libs --static` -> 0
+-lgstbase-1.0 -lgstreamer-1.0 -lgmodule-2.0 -pthread -ldl -lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency gstreamer-base-1.0 found: YES 1.14.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gstreamer-app-1.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gstreamer-app-1.0` -> 0
+1.14.4
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags gstreamer-app-1.0` -> 0
+-pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-app-1.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lgstapp-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-app-1.0 --libs` -> 0
+-lgstapp-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-app-1.0 --libs --static` -> 0
+-lgstapp-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgmodule-2.0 -pthread -ldl -lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency gstreamer-app-1.0 found: YES 1.14.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gstreamer-audio-1.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gstreamer-audio-1.0` -> 0
+1.14.4
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags gstreamer-audio-1.0` -> 0
+-pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-audio-1.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lgstaudio-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-audio-1.0 --libs` -> 0
+-lgstaudio-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-audio-1.0 --libs --static` -> 0
+-lgstaudio-1.0 -lorc-0.4 -lm -lpthread -lgstbase-1.0 -lgstreamer-1.0 -lgmodule-2.0 -pthread -ldl -lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency gstreamer-audio-1.0 found: YES 1.14.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gstreamer-video-1.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gstreamer-video-1.0` -> 0
+1.14.4
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags gstreamer-video-1.0` -> 0
+-pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-video-1.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-video-1.0 --libs` -> 0
+-lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config gstreamer-video-1.0 --libs --static` -> 0
+-lgstvideo-1.0 -lorc-0.4 -lm -lpthread -lgstbase-1.0 -lgstreamer-1.0 -lgmodule-2.0 -pthread -ldl -lgobject-2.0 -pthread -lffi -lglib-2.0 -pthread -lpcre -pthread
+Run-time dependency gstreamer-video-1.0 found: YES 1.14.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libusbredirparser-0.5' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion libusbredirparser-0.5` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency libusbredirparser-0.5 found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libusbredirhost' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion libusbredirhost` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency libusbredirhost found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libusb-1.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion libusb-1.0` -> 0
+1.0.22
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags libusb-1.0` -> 0
+-I/usr/include/libusb-1.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libusb-1.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lusb-1.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libusb-1.0 --libs` -> 0
+-lusb-1.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libusb-1.0 --libs --static` -> 0
+-lusb-1.0 -ludev -pthread
+Run-time dependency libusb-1.0 found: YES 1.0.22
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'polkit-gobject-1' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion polkit-gobject-1` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency polkit-gobject-1 found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'usbutils' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion usbutils` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency usbutils found: NO (tried pkgconfig and cmake)
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpeiisqpwv
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpeiisqpwv/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpeiisqpwv/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define makecontext meson_disable_define_of_makecontext
+        
+        #include <limits.h>
+        #undef makecontext
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char makecontext ();
+        
+        #if defined __stub_makecontext || defined __stub___makecontext
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return makecontext ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "makecontext" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp8u3ynwdt
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp8u3ynwdt/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp8u3ynwdt/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define swapcontext meson_disable_define_of_swapcontext
+        
+        #include <limits.h>
+        #undef swapcontext
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char swapcontext ();
+        
+        #if defined __stub_swapcontext || defined __stub___swapcontext
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return swapcontext ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "swapcontext" : YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpmhkym6aq
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpmhkym6aq/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpmhkym6aq/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define getcontext meson_disable_define_of_getcontext
+        
+        #include <limits.h>
+        #undef getcontext
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getcontext ();
+        
+        #if defined __stub_getcontext || defined __stub___getcontext
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return getcontext ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getcontext" : YES 
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gobject-introspection-1.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion gobject-introspection-1.0` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency gobject-introspection-1.0 found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'vapigen' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion vapigen` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency vapigen found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'liblz4' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion liblz4` -> 0
+1.8.3
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags liblz4` -> 0
+
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config liblz4 --libs` -> 0
+-L/usr/lib -llz4
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config liblz4 --libs` -> 0
+-llz4
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config liblz4 --libs --static` -> 0
+-llz4
+Run-time dependency liblz4 found: YES 1.8.3
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libsasl2' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion libsasl2` -> 0
+2.1.27
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags libsasl2` -> 0
+
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libsasl2 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lsasl2
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libsasl2 --libs` -> 0
+-lsasl2
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config libsasl2 --libs --static` -> 0
+-lsasl2 -ldl -lresolv
+Run-time dependency libsasl2 found: YES 2.1.27
+Dependency libcacard found: YES (cached)
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpsfjf3eub
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpsfjf3eub/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpsfjf3eub/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -DHAVE_CONFIG_H 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -DHAVE_CONFIG_H: YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp9rvkfbn6
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp9rvkfbn6/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp9rvkfbn6/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -DSPICE_COMPILATION 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -DSPICE_COMPILATION: YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpa74zeso0
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpa74zeso0/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpa74zeso0/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -DG_LOG_DOMAIN="GSpice" 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -DG_LOG_DOMAIN="GSpice": YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmps5gm22gt
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmps5gm22gt/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmps5gm22gt/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-sign-compare -Wsign-compare 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-sign-compare -Wsign-compare: YES 
+Using cached compile:
+Cached command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpgtxa43rd/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpgtxa43rd/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-unused-parameter -Wunused-parameter 
+
+Code:
+ int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES (cached)
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpeipf2zcs
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpeipf2zcs/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpeipf2zcs/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-cast-function-type -Wcast-function-type 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-cast-function-type -Wcast-function-type: YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmphj_vamkz
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmphj_vamkz/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmphj_vamkz/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_46 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_46: YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpfiqyhrsx
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpfiqyhrsx/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpfiqyhrsx/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -DGLIB_VERSION_MAX_ALLOWED=GLIB_VERSION_2_46 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -DGLIB_VERSION_MAX_ALLOWED=GLIB_VERSION_2_46: YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmptpnns5w9
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmptpnns5w9/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmptpnns5w9/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -DGDK_VERSION_MIN_REQUIRED=GDK_VERSION_3_22 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -DGDK_VERSION_MIN_REQUIRED=GDK_VERSION_3_22: YES 
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp9_cbl56a
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp9_cbl56a/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmp9_cbl56a/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -DGDK_VERSION_MAX_ALLOWED=GDK_VERSION_3_22 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -DGDK_VERSION_MAX_ALLOWED=GDK_VERSION_3_22: YES 
+Configuring config.h using configuration
+Configuring spice-version.h using configuration
+Pkg-config binary for MachineChoice.BUILD is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default pkg-config fallback at pkg-config
+Trying pkg-config binary pkg-config for machine MachineChoice.BUILD at ['/usr/bin/pkg-config']
+Found pkg-config: /usr/bin/pkg-config (0.29)
+Determining dependency 'glib-2.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --modversion glib-2.0` -> 0
+2.58.3
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config --cflags glib-2.0` -> 0
+-I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
+-lglib-2.0
+PKG_CONFIG_PATH: /opt/vc/lib/pkgconfig:/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig:/usr/local/lib/pkgconfig:/home/pi/spice/usr/lib/pkgconfig:/home/pi/spice/usr/share/pkgconfig:/home/pi/spice/usr/lib/arm-linux-gnueabihf/pkgconfig
+Called `/usr/bin/pkg-config glib-2.0 --libs --static` -> 0
+-lglib-2.0 -pthread -lpcre -pthread
+Running compile:
+Working directory:  /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpxlr230f_
+Command line:  cc /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpxlr230f_/testfile.c -o /home/pi/spice/src/spice-gtk-0.38/_build/meson-private/tmpxlr230f_/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,--version-script=/home/pi/spice/src/spice-gtk-0.38/src/map-file 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports link arguments -Wl,--version-script=/home/pi/spice/src/spice-gtk-0.38/src/map-file: YES 
+Message: libspice-client-glib.so version: 8.6.0
+Program python3 found: YES (/usr/bin/python3)
+Message: libspice-client-gtk.so version: 5.0.0
+Adding test "test-util"
+Adding test "test-coroutine"
+Adding test "test-session"
+Adding test "test-uri"
+Adding test "test-file-transfer"
+Program gtkdoc-scan found: NO
+Message: Not building documentation as gtk-doc was not found
+Program pod2man found: YES (/usr/bin/pod2man)
+Build targets in project: 42
+Found ninja-1.10.0.git at /usr/bin/ninja

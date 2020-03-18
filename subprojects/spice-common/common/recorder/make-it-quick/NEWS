@@ -1,0 +1,31 @@
+v0.2.4          Integration of Fedora packaging
+    
+    - Put %package first (style, comment #11 of BZ#1689277)
+    - Integrate fixes for minor issues found building SPICE
+
+v0.2.3          Address packaging review comments
+    
+    See https://bugzilla.redhat.com/show_bug.cgi?id=1689277#c7
+
+v0.2.2          Release 0.2.2: Address packaging issues reported by rpmlint
+    
+    - Presence of .c files in a non-devel package
+    - Non-binary in /usr/lib, moved config files to /usr/share
+    - Incoherent version number in change log
+    - Handling of documentation (added support to make-it-quick)
+
+v0.2.1          Add support for man pages installation
+    
+    - Add support for installation of man pages in either nroff or pod format
+    - Fix handling of subdirectories in examples
+
+v0.2            Improved packaging support, Haiku and FreeBSD platforms
+    - Installable package for Fedora and OpenSUSE
+    - Add preliminary support for Haiku and FreeBSD
+    - Several bug fixes
+
+v0.1            First official release of make-it-quick.
+
+    This version provides the basic functions required to build C / C++
+    programs. It has been tested on Linux and macOS and to a lesser
+    extent on various Windows environemnts.
