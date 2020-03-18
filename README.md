@@ -1,5 +1,10 @@
 spice-gtk
 =========
+这是树梅派4B的特别优化版本，后续将跟官方版本同步更新，测试稳定后，会将测试结果和代码全部上传。 
+
+安装编译教程也会同步更新。
+
+不要在非树梅派4B下使用此版本，其他客户端请使用官方的版本。
 
 A Gtk client and libraries for SPICE remote desktop servers.
 
