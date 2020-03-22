@@ -39,65 +39,74 @@ typedef struct openmax_context {
 
 
 
-typedef struct SpiceGstFrame SpiceGstFrame;
+typedef struct SpiceOmxFrame SpiceOmxFrame;
 
-typedef struct SpiceGstDecoder {
+typedef struct SpiceOmxDecoder {
     VideoDecoder base;
 
-    /* ---------- GStreamer pipeline ---------- */
 	int                 width;
     int                 height;
-    uint32_t l          last_mm_time;
+    uint32_t            last_mm_time;
     guint               timer_id;
-
+    SpiceOmxFrame    *  cur_frame; 
+    
     pthread_t           thread;
     int                 thread_stats;
 
-    GAsyncQueue     *   asyncDecoderQueue; 
-    GAsyncQueue     *   asyncDisplayQueue;
-} SpiceGstDecoder;
+    GQueue     *        inputQueue; 
+    GMutex     *        inputMutex;
 
-#define VALID_VIDEO_CODEC_TYPE(codec) \
-    (codec > 0 && codec < G_N_ELEMENTS(gst_opts))
+    GQueue     *        outputQueue;
+    
+} SpiceOmxDecoder;
 
-
-typedef enum {
-  GST_PLAY_FLAG_VIDEO             = (1 << 0),
-  GST_PLAY_FLAG_AUDIO             = (1 << 1),
-  GST_PLAY_FLAG_TEXT              = (1 << 2),
-  GST_PLAY_FLAG_VIS               = (1 << 3),
-  GST_PLAY_FLAG_SOFT_VOLUME       = (1 << 4),
-  GST_PLAY_FLAG_NATIVE_AUDIO      = (1 << 5),
-  GST_PLAY_FLAG_NATIVE_VIDEO      = (1 << 6),
-  GST_PLAY_FLAG_DOWNLOAD          = (1 << 7),
-  GST_PLAY_FLAG_BUFFERING         = (1 << 8),
-  GST_PLAY_FLAG_DEINTERLACE       = (1 << 9),
-  GST_PLAY_FLAG_SOFT_COLORBALANCE = (1 << 10),
-  GST_PLAY_FLAG_FORCE_FILTERS     = (1 << 11),
-} SpiceGstPlayFlags;
-
-/* ---------- SpiceGstFrame ---------- */
-
-struct SpiceGstFrame {
+struct SpiceOmxFrame {
     SpiceFrame *    sframe; 
 	uint8_t *       data[4];
 	int             data_linesize[4];
-	int             width;
-    int             height;
+	
+    int             srcWidth;
+    int             srcHeight;
+
+    int             dstWidth;
+    int             dstHeight;
+
+    int             eof;
 };
 
-typedef struct decoderBuffer {
-    int             status;
-    void   *        data;
-    int             size;
-}decoderBuffer_t;
 
-
-
-
-
+static SpiceOmxFrame * spice_omx_frame_init(SpiceFrame * sframe,int eof);
+static void spice_omx_frame_cloes(SpiceFrame * sframe);
 
 static void * openmax_decoder_thread_hanlder(void * arg);
+
+
+static SpiceOmxFrame * spice_omx_frame_init(SpiceFrame * sframe,int eof)
+{
+    SpiceOmxFrame * oframe  = g_new0(SpiceOmxFrame, 1);
+
+    oframe->sframe          = sframe;
+    oframe->eof             = eof;
+
+    return oframe;
+}
+
+static void spice_omx_frame_cloes(SpiceOmxFrame * oframe);
+{
+    if(oframe) {
+        if(oframe->sframe) {
+            spice_frame_free(oframe->sframe);
+            oframe->sframe = NULL;
+        }
+
+        if(oframe->data[0]) {
+            free(oframe->data[0]);
+            oframe->data[0] = NULL;
+        }
+    }
+}
+
+
 
 static void * openmax_decoder_thread_hanlder(void * arg)
 {
@@ -275,11 +284,6 @@ static void * openmax_decoder_thread_hanlder(void * arg)
    return NULL;
 }
 
-
-
-
-
-
 /* ---------- GStreamer pipeline ---------- */
 
 static void openmax_schedule_frame(SpiceGstDecoder *decoder);
@@ -287,27 +291,20 @@ static void openmax_schedule_frame(SpiceGstDecoder *decoder);
 /* main context */
 static gboolean openmax_display_frame(gpointer video_decoder)
 {
-    SpiceGstDecoder *decoder = (SpiceGstDecoder*)video_decoder;
-    SpiceGstFrame *gstframe;
-   
+    SpiceOmxDecoder *decoder = (SpiceOmxDecoder*)video_decoder;
+      
     gstframe = g_queue_pop_head(decoder->displayQueue);
-    if(gstframe == NULL) {
-        return;
-    }
 
-    stream_display_frame(decoder->base.stream, gstframe->encoded_frame,
-                         gstframe->width, gstframe->height,
-						 gstframe->data_linesize[0], gstframe->data[0]);
+    stream_display_frame(decoder->base.stream, decoder->cur_frame->encoded_frame,
+                         decoder->cur_frame->width, decoder->cur_frame->height,
+						 decoder->cur_frame->data_linesize[0], decoder->cur_frame->data[0]);
 
-    decoder->displayQueueSize--;
-    free_gst_frame(gstframe);
     decoder->timer_id = 0;
-    schedule_frame(decoder);
+    openmax_schedule_frame(decoder);
     return G_SOURCE_REMOVE;
 }
 
-/* main loop or GStreamer streaming thread */
-static void openmax_schedule_frame(SpiceGstDecoder *decoder)
+static void openmax_schedule_frame(SpiceOmxDecoder *decoder)
 {   
     while (!decoder->timer_id) {
         guint32 now = stream_get_time(decoder->base.stream);
@@ -316,11 +313,8 @@ static void openmax_schedule_frame(SpiceGstDecoder *decoder)
             return;
         }		
         int32_t tmp = gstframe->encoded_frame->mm_time - now;
-        if ( tmp > 0) {
-			//spice_warning("spice_mmtime_diff now %d mm_time %d", now, gstframe->encoded_frame->mm_time);
+        if ( tmp >= 0) {
             decoder->timer_id = g_timeout_add(tmp,display_frame, decoder);
-        }else if(tmp <= 0 && tmp > -100 ) {
-            decoder->timer_id = g_timeout_add(0,display_frame, decoder);
         } else {
             spice_warning("%s: rendering too late by %u ms (ts: %u, mmtime: %u), dropping",
                         __FUNCTION__, now - gstframe->encoded_frame->mm_time,
@@ -335,14 +329,15 @@ static void openmax_schedule_frame(SpiceGstDecoder *decoder)
 /* ---------- VideoDecoder's public API ---------- */
 static void spice_openmax_decoder_reschedule(VideoDecoder *video_decoder)
 {
-    SpiceGstDecoder *decoder = (SpiceGstDecoder*)video_decoder;
+    SpiceOmxDecoder *decoder = (SpiceOmxDecoder*)video_decoder;
 
-    guint timer_id;
-    timer_id = decoder->timer_id;
-    decoder->timer_id = 0;
- 
-    if (timer_id != 0) {
+    if (decoder->timer_id != 0) {
+        if( decoder->cur_frame ) {
+            spice_frame_free(decoder->cur_frame);
+            decoder->cur_frame = NULL;
+        }
         g_source_remove(timer_id);
+        decoder->timer_id = 0;
     }
     schedule_frame(decoder);
 }
@@ -351,23 +346,17 @@ static void spice_openmax_decoder_reschedule(VideoDecoder *video_decoder)
 static void spice_openmax_decoder_destroy(VideoDecoder *video_decoder)
 {
     spice_warning("spice_gst_decoder_destroy close stream");
-    SpiceGstDecoder *decoder = (SpiceGstDecoder*)video_decoder;
+    SpiceOmxDecoder *decoder = (SpiceOmxDecoder*)video_decoder;
 
-    if (decoder->timer_id) {
-        g_source_remove(decoder->timer_id);
+    if (decoder->timer_id != 0) {
+        if( decoder->cur_frame ) {
+            spice_frame_free(decoder->cur_frame);
+            decoder->cur_frame = NULL;
+        }
+        g_source_remove(timer_id);
+        decoder->timer_id = 0;
     }
     
-    if(decoder->asyncDecoderQueue) {
-        g_async_queue_unref(decoder->asyncDecoderQueue);
-        decoder->asyncDecoderQueue = NULL;
-    }
-
-    if(decoder->asyncDisplayQueue) {
-        g_async_queue_unref(decoder->asyncDisplayQueue);
-        decoder->asyncDisplayQueue = NULL;
-    }
-
-
     g_free(decoder);
 }
 
@@ -376,7 +365,7 @@ static gboolean spice_openmax_decoder_queue_frame(VideoDecoder *video_decoder,
                                               SpiceFrame *frame, int latency)
 {
 
-    SpiceGstDecoder *decoder = (SpiceGstDecoder*)video_decoder;
+    SpiceOmxDecoder *decoder = (SpiceOmxDecoder*)video_decoder;
 
     if (frame->size == 0) {
         SPICE_DEBUG("got an empty frame buffer!");
@@ -388,7 +377,7 @@ static gboolean spice_openmax_decoder_queue_frame(VideoDecoder *video_decoder,
         SPICE_DEBUG("new-frame-time < last-frame-time (%u < %u):"
                     " resetting stream",
                     frame->mm_time, decoder->last_mm_time);
-        /* Let GStreamer deal with the frame anyway */
+        
     }
 
     decoder->last_mm_time = frame->mm_time;
@@ -410,20 +399,17 @@ static gboolean spice_openmax_decoder_queue_frame(VideoDecoder *video_decoder,
         return FALSE;
     }
         
-
-    
-
     return TRUE;
 }
 
 G_GNUC_INTERNAL
 VideoDecoder* create_openmax_decoder(int codec_type, display_stream *stream)
 {
-    SpiceGstDecoder *decoder = NULL;
+    SpiceOmxDecoder *decoder = NULL;
   
     g_return_val_if_fail(VALID_VIDEO_CODEC_TYPE(codec_type), NULL);
 
-    decoder = g_new0(SpiceGstDecoder, 1);
+    decoder = g_new0(SpiceOmxDecoder, 1);
     
     decoder->base.destroy       = spice_openmax_decoder_destroy;
     decoder->base.reschedule    = spice_openmax_decoder_reschedule;
@@ -431,18 +417,13 @@ VideoDecoder* create_openmax_decoder(int codec_type, display_stream *stream)
     decoder->base.codec_type    = codec_type;
     decoder->base.stream        = stream;
 
-    decoder->asyncDecoderQueue  = NULL;
-    decoder->asyncDisplayQueue  = NULL;
-
-    decoder->thread_stats       = 1;
-
-    decoder->asyncDecoderQueue  =  g_async_queue_new();
-    if(!decoder->asyncDecoderQueue) {
+    decoder->inputrQueue        =  g_queue_new();
+    if(!decoder->inputrQueue) {
         goto FAILED;
     }
 
-    decoder->asyncDisplayQueue  =  g_async_queue_new();
-    if(!decoder->asyncDisplayQueue) {
+    decoder->outputQueue        =  g_queue_new();
+    if(!decoder->outputQueue) {
         goto FAILED;
     }
     
@@ -450,25 +431,22 @@ VideoDecoder* create_openmax_decoder(int codec_type, display_stream *stream)
     if(ret < 0) {
         goto FAILED;
     }
-
     pthread_detach(decoder->thread);
 
     return (VideoDecoder*)decoder;
 
 FAILED:
-    decoder->thread_stats       = 0;
-
-    if(decoder->asyncDecoderQueue) {
-        g_async_queue_unref(decoder->asyncDecoderQueue);
-        decoder->asyncDecoderQueue = NULL;
-    }
-
-    if(decoder->asyncDisplayQueue) {
-        g_async_queue_unref(decoder->asyncDisplayQueue);
-        decoder->asyncDisplayQueue = NULL;
-    }
-
     spice_warning(" <- create_openmax_decoder failed ->");
+
+    if(!decoder->inputrQueue) {
+        g_queue_free(decoder->inputrQueue);
+        decoder->inputrQueue = NULL;
+    }
+
+    if(!decoder->outputQueue) {
+        g_queue_free(decoder->outputQueue);
+        decoder->outputQueue = NULL;
+    }
 
     g_free(decoder);
 
